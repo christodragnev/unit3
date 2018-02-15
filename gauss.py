@@ -18,3 +18,13 @@ for i in range(num1, num2+1):
 print(total)
 """
 
+num1 = int(input('Enter a number instead of 1: '))
+num2 = int(input('Enter a number instead of 100: '))
+difference = input('Enter a differnce between each term of the series: ')
+
+
+total = 0
+for i in range(num1, num2+1,difference):
+    total = (total + i)+(num2-num1)
+print(total)
+
