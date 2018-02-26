@@ -4,4 +4,4 @@
 
 name = input('Enter name:')
 for ch in name:
-    print(ch)
+    print(ch*7)
