@@ -4,11 +4,15 @@
 
 from ggame import *
 
+RADIUS = 10
+
 red = Color(0xFF0000,1)
 
-dot = CircleAsset(25,LineStyle(1,red),red)
+dot = CircleAsset(RADIUS,LineStyle(1,red),red)
 
-for i in range(10):
-    Sprite(dot,(10+i,10))
+for i in range(10): #putting as row of dots
+    for j in range(12):
+        Sprite(dot,(10+i*(2*RADIUS+10),10+(2*RADIUS+10)*j))
 
 App().run()
+ 
